@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dentis</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <form action="" class="formulario">
+      <img src="logo.png" class="imgLogo" />
+
+      <h1 class="formulario__titulo"></h1>
+      <h3 class="formulario__subtitulo">Dentis</h3>
+     
+
+
+      <input
+        id="cliente"
+        type="text"
+        class="formulario__input"
+        placeholder="Nome"
+      />
+     
+      <label for="telefone" class="formulario__label"
+        >Ex:5571999999999</label
+      >
+      <input
+        id="telefone"
+        type="text"
+        class="formulario__input"
+        placeholder="(Telefone)Somente numeros"
+      />
+ 
+      <label for="fecha" class="formulario__label"
+        >Data</label
+      >
+      <input
+        id="data"
+        type="date"
+        class="formulario__input"
+        pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+      />
+      
+      <input
+        id="descricao"
+        type="text"
+        class="formulario__input"
+        placeholder="Descrição"
+      /> 
+        
+      <label for="valor" class="formulario__label"
+        >Valor</label
+      >  
+      <input
+        id="valor"
+        type="number"
+        class="formulario__input"
+        placeholder="0.0"
+      />
+      
+      <label for="hora" class="formulario__label"
+        >Hora</label
+      >
+      <input id="hora" type="time" class="formulario__input" />
+     
+      <div id="respuesta"></div>
+
+      <button id="submit" class="formulario__submit"><i class="fab fa-whatsapp">Enviar WhatsApp</i></button>
+    </form>
+    <script src="js/form.js"></script>
+  </body>
+</html>
